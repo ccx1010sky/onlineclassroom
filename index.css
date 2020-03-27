@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+  font-size: 16px;
+  /* color: brown; */
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(210, 229, 231);
+}
+/* global */
+.container {
+  margin: auto;
+  width: 80%;
+  overflow: hidden;
+}
+.dark {
+  background: rgb(71, 58, 58);
+  color: white;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+/* header */
+header {
+  padding-top: 30px;
+  min-height: 90px;
+  color: rgb(210, 229, 231);
+  /* background-color cover area includes the border and padding area */
+  background-color: rgb(94, 77, 77);
+  /* background-image: url(./img/banner-01.jpg); */
+  border-bottom: 2px solid orangered;
+}
+
+header a {
+  color: rgb(210, 229, 231);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+header ul {
+  margin: 0;
+  padding: 0;
+}
+header li {
+  /* float: left; */
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+.branding {
+  margin-top: 15px;
+  padding-top: 6px;
+
+  float: left;
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+header .highlight,
+header .current {
+  color: red;
+  font-weight: bold;
+}
+header a {
+  transition: 0.5s;
+}
+header a:hover {
+  /* color: green; */
+  /* font-weight: bold; */
+  font-size: 18px;
+}
+
+header h1 {
+  transition: 0.5s;
+}
+header h1:hover {
+  color: orangered;
+}
+
+/* showcase */
+#showcase {
+  background-color: green;
+  overflow: hidden;
+  min-height: 400px;
+  background: url("./img/g1.jpeg") no-repeat -10px 0px;
+  background-size: cover;
+}
+#showcase h1 {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(153, 56, 26);
+}
+#showcase p {
+  text-align: center;
+  font-size: 25px;
+  color: rgb(153, 56, 26);
+}
+/* newsletter */
+/* no need to set the height */
+#newsletter {
+  background-color: rgb(90, 81, 86);
+}
+#newsletter .container h1 {
+  float: left;
+  color: aliceblue;
+}
+form {
+  float: right;
+  margin-bottom: 10px;
+}
+/* input and button are replacment element (they are also inline element) */
+/* input[type="email"] or .button_1 */
+input[type="email"] {
+  margin-top: 5px;
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+  font-size: medium;
+}
+.button_1 {
+  /* margin-left: 6px; */
+  height: 38px;
+  border: 3px solid;
+  background: orangered;
+  padding: 0 20px 0 20px;
+  margin-top: 10px;
+  color: papayawhip;
+  font-size: 16px;
+}
+/* boxes */
+#boxes {
+  margin-top: 40px;
+}
+.box {
+  float: left;
+  text-align: center;
+  margin-left: 35px;
+  width: 40%;
+}
+
+.box h1 {
+  transition: 0.4s;
+}
+.box h1:hover {
+  color: red;
+}
+.box img {
+  width: 160px;
+  height: 160px;
+  cursor: pointer;
+}
+
+/* sidebar */
+#sidebar {
+  float: right;
+  width: 30%;
+  margin-top: 100px;
+}
+/* article */
+article {
+  float: left;
+  width: 60%;
+}
+#main-col {
+  color: black;
+  margin-top: 50px;
+}
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: aliceblue;
+  text-align: center;
+  font-size: 10px;
+  background-color: rgb(223, 132, 14);
+}
+/* media queries */
+@media (max-width: 768px) {
+  header .branding,
+  header nav,
+  header nav li,
+  #newsletter form,
+  #newsletter h1,
+  #boxes .box,
+  article,
+  #sidebar {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  header {
+    padding-bottom: 10px;
+  }
+  #showcase h1 {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 40px;
+    line-height: 1.5;
+  }
+  #showcase p {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+  #newsletter button {
+    display: block;
+    width: 100%;
+  }
+  #newsletter form input[type="email"] {
+    width: 100%;
+  }
+}
