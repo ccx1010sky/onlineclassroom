@@ -28,7 +28,7 @@ header {
   /* background-color cover area includes the border and padding area */
   background-color: rgb(94, 77, 77);
   /* background-image: url(./img/banner-01.jpg); */
-  border-bottom: 2px solid orangered;
+  border-bottom: 4px solid orangered;
 }
 
 header a {
